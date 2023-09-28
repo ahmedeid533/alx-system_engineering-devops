@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # This script print Best School 10 times.
-i="0"
 
-while [ $i -lt 10 ]
+for i in in {1..10}
 do
-echo "Best School"
-i=$((i+1))
+    echo "Best School"
 done
