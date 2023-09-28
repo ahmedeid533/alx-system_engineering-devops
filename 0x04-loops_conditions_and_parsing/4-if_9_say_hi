@@ -7,6 +7,5 @@ do
     echo "Best School"
     if ((i = 8))
         echo "Hi"
-    fi
     i=$((i+1))
 done
