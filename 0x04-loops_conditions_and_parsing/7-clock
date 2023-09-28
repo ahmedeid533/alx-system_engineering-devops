@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script print Best School 10 times.
+# This script print hours.
 i="0"
 
 while [ $i -lt 13 ]
