@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script print Best School 10 times 4 and 8 are def.
+i="0"
+
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    if [ "$i" -eq "4" ];
+    then
+        echo "bad luck"
+    elif [ "$i" -eq "8" ]
+    then
+        echo "good luck"
+    fi
+    i=$((i+1))
+done
