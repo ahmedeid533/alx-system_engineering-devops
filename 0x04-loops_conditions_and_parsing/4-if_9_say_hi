@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script print Best School 10 times 9 say hi.
+i="0"
+
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    if ((i = 8))
+        echo "Hi"
+    fi
+    i=$((i+1))
+done
