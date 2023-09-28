@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# This script opens 4 terminal windows.
+# This script print Best School 10 times.
 
 i="0"
 
