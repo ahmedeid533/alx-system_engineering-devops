@@ -2,7 +2,7 @@
 # This script print Best School 10 times.
 
 max=10
-for (( i=1; i <= $max; ++i ))
+for (( i=1; i <= max; ++i ))
 do
     echo "Best School"
 done
