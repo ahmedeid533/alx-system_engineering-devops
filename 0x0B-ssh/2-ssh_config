@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # time to config the ssh
-Host *
+host *
 	PasswordAuthentication no
 	IdentityFile ~/.ssh/school
 	SendEnv LANG LC_*
