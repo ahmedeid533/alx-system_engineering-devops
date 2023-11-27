@@ -7,6 +7,8 @@
 apt-get update
 apt-get install -y nginx
 mkdir /etc/nginx/html
+chown -R www-data:www-data /etc/nginx/html
+chmod -R 755 /etc/nginx/html
 touch /etc/nginx/html/index.html
 echo "Hello World!" > /etc/nginx/html/index.html
 printf %s "server {
