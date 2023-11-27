@@ -6,10 +6,10 @@ if [ $# -lt 4 ]; then
   exit 1
 fi
 
-filePath = $1
-IP = $2
-userName = $3
-pathSSH = $4
+filePath=$1
+IP=$2
+userName=$3
+pathSSH=$4
 
 scp -o StrictHostKeyChecking=no -i "$pathSSH" "$filePath" "$userName@$IP:~/"
 
