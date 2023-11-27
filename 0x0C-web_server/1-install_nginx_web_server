@@ -3,7 +3,7 @@
 #+    Listens on port 80.
 #+    Returns a page containing "Hello World!" when queried
 #++    at the root with a curl GET request.
-
+sudo su
 apt-get update
 apt-get install -y nginx
 mkdir /etc/nginx/html
