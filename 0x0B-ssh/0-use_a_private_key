@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD
-#yes direct to the server
-ssh ubuntu@52.91.168.161
-=======
 # yes direct to the server
 ssh -i ~/.ssh/school ubuntu@100.25.215.68
->>>>>>> 86145768f7851574794aae55845206c5c0877b2a
