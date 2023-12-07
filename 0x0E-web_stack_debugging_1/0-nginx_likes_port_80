@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 #the bug it wasn listen for port 80
-sudo su
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
-pkill -o nginx
