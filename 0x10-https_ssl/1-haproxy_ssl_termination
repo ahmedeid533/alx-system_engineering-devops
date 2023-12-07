@@ -21,7 +21,7 @@ frontend http
     default_backend app_pool
 
 frontend https
-    bind *:443 ssl crt /etc/haproxy/certs/www.martinsaavedra.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.alxairbnbahmed.tech.pem
     reqadd X-Forwarded-Proto:\ https
     acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
