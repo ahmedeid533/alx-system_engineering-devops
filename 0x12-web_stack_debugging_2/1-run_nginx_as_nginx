@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nginx as user and config Nginx
+# config Nginx
 sudo -u nginx service nginx stop
 pkill apache2
 chmod 644 /etc/nginx/nginx.conf
