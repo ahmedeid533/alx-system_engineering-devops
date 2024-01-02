@@ -8,7 +8,7 @@ if __name__ == "__main__":
     import json
 
     AllempTasks = []
-    url = 'https://jsonplaceholder.typicode.com/users/'
+    url = 'https://jsonplaceholder.typicode.com/users'
     users = requests.get(url).json()
 
     for user in users:
@@ -18,12 +18,6 @@ if __name__ == "__main__":
 
         completed_tasks = [task for task in tasks if task.get('completed')
                            is True]
-
-        print('Employee {} is done with tasks({}/{}):'.format(
-            user.get('name'), len(completed_tasks), len(tasks)))
-
-        for task in completed_tasks:
-            print('\t {}'.format(task.get('title')))
 
         AllempTasks.append({user['id']: [{
             'username': user.get('username'),
