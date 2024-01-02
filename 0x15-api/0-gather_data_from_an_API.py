@@ -3,7 +3,7 @@
 
 
 if __name__ == "__main__":
-    """Gather data from an API."""
+    """Gather data from an API """
     import requests
     import sys
 
