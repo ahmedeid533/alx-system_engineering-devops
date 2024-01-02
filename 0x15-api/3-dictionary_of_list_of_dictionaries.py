@@ -17,7 +17,8 @@ if __name__ == "__main__":
             user_id)
         tasks = requests.get(url).json()
 
-        completed_tasks = [task for task in tasks if task.get('completed') is True]
+        completed_tasks = [task for task in tasks if task.get('completed') 
+                           is True]
 
         print('Employee {} is done with tasks({}/{}):'.format(
             user.get('name'), len(completed_tasks), len(tasks)))
@@ -30,4 +31,4 @@ if __name__ == "__main__":
             'task': task.get('title'),
             'completed': task.get('completed')} for task in tasks]})
     with open('todo_all_employees.json', 'w') as jsonfile:
-            json.dump(AllempTasks, jsonfile)
+        json.dump(AllempTasks, jsonfile)

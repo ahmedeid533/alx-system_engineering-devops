@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     print('Employee {} is done with tasks({}/{}):'.format(
         user.get('name'), len(completed_tasks), len(tasks)))
-	
+
     for task in completed_tasks:
         print('\t {}'.format(task.get('title')))
 
