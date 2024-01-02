@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# Export data in the csv format.
+"""Export data in the CSV format."""
 
 
 if __name__ == "__main__":
-	# Import the necessary modules
+	"""Export data in the CSV format."""
 	import requests
 	import sys
 	import csv

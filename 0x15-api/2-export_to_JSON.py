@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-# Export data in the JSON format.
+"""Export data in the JSON format."""
 
 
 if __name__ == "__main__":
-	# Import the necessary modules
+	"""Export data in the JSON format."""
 	import requests
 	import sys
 	import json
-	# Get the user id
+
 	user_id = sys.argv[1]
 	# Get the user name
 	url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
