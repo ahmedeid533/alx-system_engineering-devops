@@ -1,6 +1,7 @@
 #import requests
 import requests
 import sys
+import csv
 
 if __name__ == "__main__":
 	# Get the user id
@@ -20,3 +21,9 @@ if __name__ == "__main__":
 	# Print the tasks
 	for task in completed_tasks:
 		print('\t {}'.format(task.get('title')))
+	# Export the information to csv
+	with open('{}.csv'.format(user_id), 'w') as csvfile:
+		writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+		for task in tasks:
+			writer.writerow([user_id, user.get('username'),
+							task.get('completed'), task.get('title')])

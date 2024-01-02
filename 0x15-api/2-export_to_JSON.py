@@ -1,6 +1,7 @@
 #import requests
 import requests
 import sys
+import json
 
 if __name__ == "__main__":
 	# Get the user id
@@ -20,3 +21,9 @@ if __name__ == "__main__":
 	# Print the tasks
 	for task in completed_tasks:
 		print('\t {}'.format(task.get('title')))
+	# Export the information to json
+	with open('{}.json'.format(user_id), 'w') as jsonfile:
+		json.dump({user_id: [{
+			'task': task.get('title'),
+			'completed': task.get('completed'),
+			'username': user.get('username')} for task in tasks]}, jsonfile)
