@@ -1,9 +1,10 @@
-#import requests to Records all tasks from all employees in JSON format.
-import requests
-import sys
-import json
+#!/usr/bin/python3
+# Export data in the JSON format.
+
 
 if __name__ == "__main__":
+	import requests
+	import json
 	#Format must be: { "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ], "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ]}
 	#File name must be: todo_all_employees.json
 	AllempTasks = []

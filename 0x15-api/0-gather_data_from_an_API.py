@@ -1,8 +1,10 @@
-#import requests
-import requests
-import sys
+#!/usr/bin/python3
+# Gather data from an API.
+
 
 if __name__ == "__main__":
+	import requests
+	import sys
 	# Get the user id
 	user_id = sys.argv[1]
 	# Get the user name

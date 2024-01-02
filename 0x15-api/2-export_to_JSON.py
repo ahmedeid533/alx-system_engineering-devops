@@ -1,9 +1,11 @@
-#import requests
-import requests
-import sys
-import json
+#!/usr/bin/python3
+# Export data in the JSON format.
+
 
 if __name__ == "__main__":
+	import requests
+	import sys
+	import json
 	# Get the user id
 	user_id = sys.argv[1]
 	# Get the user name

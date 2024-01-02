@@ -1,9 +1,11 @@
-#import requests
-import requests
-import sys
-import csv
+#!/usr/bin/python3
+# Export data in the csv format.
+
 
 if __name__ == "__main__":
+	import requests
+	import sys
+	import csv
 	# Get the user id
 	user_id = sys.argv[1]
 	# Get the user name
