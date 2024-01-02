@@ -3,7 +3,7 @@
 
 
 if __name__ == "__main__":
-
+	# Import the necessary modules
 	import requests
 	import sys
 	import csv

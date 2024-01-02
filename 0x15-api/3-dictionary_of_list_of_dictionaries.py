@@ -3,11 +3,10 @@
 
 
 if __name__ == "__main__":
-
+	# Import the necessary modules
 	import requests
 	import json
-	#Format must be: { "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ], "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ]}
-	#File name must be: todo_all_employees.json
+	
 	AllempTasks = []
 	for user_id in range(1, 11):
 		#Get the user name
