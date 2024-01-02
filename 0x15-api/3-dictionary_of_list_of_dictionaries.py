@@ -7,7 +7,7 @@ if __name__ == "__main__":
     import requests
     import json
 
-    AllempTasks = []
+    AllempTasks = {}
     url = 'https://jsonplaceholder.typicode.com/users'
     users = requests.get(url).json()
 
@@ -20,6 +20,6 @@ if __name__ == "__main__":
             tasks_list.append({"username": user['username'],
                                "task": task['title'],
                                "completed": task['completed']})
-        AllempTasks.append({user['id']: tasks_list})
+        AllempTasks[user['id']] = tasks_list
     with open('todo_all_employees.json', 'w') as jsonfile:
         json.dump(AllempTasks, jsonfile)
