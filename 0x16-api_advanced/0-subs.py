@@ -12,6 +12,6 @@ def number_of_subscribers(subreddit):
                (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36\
                Edge/12.246'}
     r = requests.get(url, headers=headers, allow_redirects=False)
-    if r.status_code != 200:
+    if r.status_code >= 300:
         return 0
     return r.json().get('data').get('subscribers')
