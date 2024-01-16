@@ -11,7 +11,7 @@ def top_ten(subreddit):
                AppleWebKit/537.36 (KHTML, like Gecko)\
                Chrome/114.0.0.0 Safari/537.36'}
     r = requests.get(url, headers=headers, allow_redirects=False)
-    if r.status_code >= 200:
+    if r.status_code >= 300:
         print("None")
         return
     for post in r.json().get('data').get('children'):
