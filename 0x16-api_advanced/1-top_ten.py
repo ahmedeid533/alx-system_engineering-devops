@@ -7,9 +7,9 @@ def top_ten(subreddit):
     import requests
 
     url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
-               AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102\
-               Safari/537.36'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K)\
+               AppleWebKit/537.36 (KHTML, like Gecko)\
+               Chrome/114.0.0.0 Safari/537.36'}
     r = requests.get(url, headers=headers, allow_redirects=False)
     if r.status_code != 200:
         print("None")
