@@ -12,7 +12,7 @@ def top_ten(subreddit):
                Safari/537.36'}
     r = requests.get(url, headers=headers, allow_redirects=False)
     if r.status_code != 200:
-        print(None)
+        print("None")
         return
     for post in r.json().get('data').get('children'):
         print(post.get('data').get('title'))
