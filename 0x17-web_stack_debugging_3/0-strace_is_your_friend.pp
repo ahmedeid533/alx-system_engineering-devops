@@ -1,2 +1,6 @@
 # This is a comment
-strace -f -e trace=file -s 1000 -o strace_output.txt apache2
+
+exec { 'fix_phpp':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => ['/bin', '/usr/bin/', '/usr/loca/bin/'],
+}
